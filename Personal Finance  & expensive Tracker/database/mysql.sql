@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS finance_tracker;
+USE finance_tracker;
+
+CREATE TABLE IF NOT EXISTS transaction (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  type VARCHAR(20) NOT NULL,
+  amount DOUBLE NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  date VARCHAR(50) NOT NULL
+);
